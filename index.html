@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>A Little Birthday Magic ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+  <div class="floating-balloon balloon-one"></div><div class="floating-balloon balloon-two"></div>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Birthday magic home"><span class="brand-icon">✿</span> little moments</a>
+      <span class="top-note">A little website, a lot of love <span>♡</span></span>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> MADE JUST FOR YOUR DAY</p>
+        <h1>A little more<br><em>birthday magic.</em></h1>
+        <p class="intro">A tiny corner of the internet made to celebrate someone wonderful. Open your card, make a wish, and keep a few lovely memories close.</p>
+        <div class="name-form">
+          <label for="recipientName">This little surprise is for</label>
+          <div class="input-row">
+            <input id="recipientName" type="text" maxlength="28" placeholder="Your name here..." autocomplete="off">
+            <button id="personalizeBtn" class="button button-dark" type="button">Personalize <span>↗</span></button>
+          </div>
+          <small>You can change the name anytime.</small>
+        </div>
+        <button class="scroll-link" id="openCardLink" type="button"><span class="scroll-icon">↓</span> Open the birthday card</button>
+      </div>
+
+      <div class="hero-art" aria-label="Decorative 3D birthday cake illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">✦</div>
+        <div class="cake-scene">
+          <div class="cake-shadow"></div>
+          <div class="cake">
+            <div class="candle candle-one"><i></i></div><div class="candle candle-two"><i></i></div><div class="candle candle-three"><i></i></div>
+            <div class="cake-top"></div>
+            <div class="cake-body"><span class="icing drip-one"></span><span class="icing drip-two"></span><span class="icing drip-three"></span><span class="icing drip-four"></span><span class="cake-decoration">♡　✦　♡</span></div>
+            <div class="cake-base"></div>
+          </div>
+          <div class="cake-plate"></div>
+          <div class="mini-heart heart-a">♥</div><div class="mini-heart heart-b">♥</div>
+          <div class="cake-label">make a wish ✨</div>
+        </div>
+        <div class="art-caption"><span class="caption-line"></span> your day, your kind of magic <span class="caption-line"></span></div>
+      </div>
+    </section>
+
+    <section class="card-section section-block" id="birthday-card">
+      <div class="section-heading">
+        <p class="eyebrow">01 / A NOTE FOR YOU</p>
+        <h2>A message, wrapped<br><em>with love.</em></h2>
+        <p>Tap the envelope to open your little surprise.</p>
+      </div>
+      <button class="envelope-wrap" id="envelope" type="button" aria-label="Open birthday letter" aria-expanded="false">
+        <span class="envelope-hint">Psst… open me!</span>
+        <span class="letter-paper">
+          <span class="letter-sparkle">✦</span>
+          <span class="letter-small">A little birthday note for</span>
+          <strong id="letterName">Someone Wonderful</strong>
+          <span class="letter-message">You deserve a day full of little joys, big smiles, and beautiful surprises.</span>
+          <span class="letter-signoff">with lots of love ♡</span>
+        </span>
+        <span class="envelope-back"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-seal">♡</span>
+      </button>
+      <p class="opened-note" id="openedNote" aria-live="polite">Your message is waiting inside 💌</p>
+    </section>
+
+    <section class="wish-section section-block">
+      <div class="wish-card">
+        <div class="wish-decoration">✦</div>
+        <div class="wish-copy">
+          <p class="eyebrow">02 / YOUR WISH</p>
+          <h2>Close your eyes.<br><em>Dream a little.</em></h2>
+          <p>Every birthday is a fresh page. Take a breath, make a wish, and let the next chapter surprise you.</p>
+          <button class="button button-light" id="wishBtn" type="button">Make a wish <span>✧</span></button>
+          <p class="wish-result" id="wishResult" aria-live="polite"></p>
+        </div>
+        <div class="wish-visual" aria-hidden="true">
+          <div class="moon">☾</div><div class="wish-star ws-one">✦</div><div class="wish-star ws-two">✧</div><div class="wish-star ws-three">✦</div>
+          <div class="wish-cloud cloud-one"></div><div class="wish-cloud cloud-two"></div>
+          <div class="wish-orb"><span>make<br>a wish</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories-section section-block" id="memories">
+      <div class="section-heading heading-row">
+        <div><p class="eyebrow">03 / LITTLE TIME CAPSULE</p><h2>Moments worth<br><em>keeping.</em></h2></div>
+        <p class="heading-description">Add your favorite photos to turn this page into a mini memory book. Your photos stay in this browser preview.</p>
+      </div>
+      <div class="memory-grid">
+        <label class="memory-card memory-pink" for="photoOne">
+          <input class="photo-input" id="photoOne" type="file" accept="image/*">
+          <span class="memory-image" id="previewOne"><span class="memory-icon">＋</span><span class="memory-photo-text">Add a favorite photo</span></span>
+          <span class="memory-caption"><span>01</span> The good old days <b>♡</b></span>
+        </label>
+        <label class="memory-card memory-lilac" for="photoTwo">
+          <input class="photo-input" id="photoTwo" type="file" accept="image/*">
+          <span class="memory-image" id="previewTwo"><span class="memory-icon">＋</span><span class="memory-photo-text">Add a favorite photo</span></span>
+          <span class="memory-caption"><span>02</span> The silly moments <b>✦</b></span>
+        </label>
+        <label class="memory-card memory-peach" for="photoThree">
+          <input class="photo-input" id="photoThree" type="file" accept="image/*">
+          <span class="memory-image" id="previewThree"><span class="memory-icon">＋</span><span class="memory-photo-text">Add a favorite photo</span></span>
+          <span class="memory-caption"><span>03</span> More to come <b>✧</b></span>
+        </label>
+      </div>
+      <p class="photo-tip">Tip: click any card to choose a photo from your device.</p>
+    </section>
+
+    <section class="final-section">
+      <div class="final-sparkle">✦</div>
+      <p class="eyebrow">ONE LAST THING</p>
+      <h2>May your year be<br><em>soft, bright & beautiful.</em></h2>
+      <p>More laughter. More brave beginnings. More little things that make life feel lovely.</p>
+      <div class="final-signature">Happy Birthday <span id="finalName">you</span> <b>♡</b></div>
+      <button class="button button-dark" id="celebrateBtn" type="button">Celebrate again <span>✦</span></button>
+    </section>
+
+    <footer class="footer"><span>Made with ♡ and a little sparkle</span><a href="#home">Back to top ↑</a></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
