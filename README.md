@@ -1,7 +1,8 @@
 # Birthday Card Website 🎂
 
 A creative, interactive birthday-card website built with **HTML, CSS, and JavaScript**.
-🔗 Live :
+
+🔗 Live :https://nourvandaelheneidy-debug.github.io/BD_Card-Site/
 ## Features
 - Responsive layout for desktop and mobile
 - 3D-style cake illustration made with CSS
